@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Our Company</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/input.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    gsap.from(".team-card", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.2,
+        onComplete: () => console.log("Animation completed"),
+    });
+});
+
+    </script>
+</head>
+<body class="bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-blue-900 font-sans">
+
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-500 via-blue-500 to-blue-600 text-white py-4 shadow-md fixed top-0 w-full z-50">
+      <nav class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2 px-4">
+              <img src="assets/images/logo.svg" alt="Unique Goal Logo" class="w-8 h-8">
+              <h1 class="text-2xl font-extrabold tracking-wide animate-fadeIn">Unique Goal</h1>
+          </div>
+          <!-- Navigation Links -->
+          <ul class="flex space-x-8 px-4">
+              <li><a href="index.html" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 animate-slideIn">Home</a></li>
+              <li><a href="services.html" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 animate-slideIn delay-100">Services</a></li>
+              <li><a href="contact.html" class="text-lg font-medium hover:text-blue-300 transition-colors duration-300 animate-slideIn delay-200">Contact Us</a></li>
+          </ul>
+      </nav>
+  </header>
+
+    <section id="introduction" class="min-h-screen flex items-center justify-between px-8 md:px-16">
+      <!-- Illustration (Left Side) -->
+      <div class="flex-1 hidden md:flex justify-center">
+          <img src="assets/images/Online Romance.svg" alt="Illustration" loading="lazy" class="max-w-sm md:max-w-md lg:max-w-lg transform hover:scale-105 transition-transform duration-500 ease-in-out">
+      </div>
+  
+      <!-- Text Content (Right Side) -->
+      <div class="flex-1 text-center md:text-left">
+          <h2 class="text-5xl font-extrabold text-blue-800 mb-6 leading-tight animate-fadeInUp">
+              Welcome to <span class="text-blue-900">Unique Goal</span>
+          </h2>
+          <p class="text-lg text-blue-700 max-w-md mx-auto md:mx-0 mb-8 animate-fadeInUp">
+              We are committed to delivering excellence and innovation. Our team of dedicated professionals ensures client satisfaction with every project.
+          </p>
+          <a href="#team" class="inline-block px-6 py-3 bg-blue-800 text-white rounded-full shadow-lg hover:bg-blue-700 transform hover:scale-105 transition-transform duration-300">
+              Meet Our Team
+          </a>
+      </div>
+  </section>
+
+    <section id="team" class="container mx-auto my-12 px-4">
+      <h3 class="text-3xl font-bold text-center text-blue-800 mb-8">Meet Our Team</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Team Member 1 -->
+          <div class="bg-gradient-to-r from-blue-500 to-blue-500 text-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+              <div class="flex flex-col items-center">
+                  <img src="assets/images/member1.png" alt="Mg Mg" class="w-40 h-40 rounded-full border-4 border-white shadow-md">
+                  <h4 class="text-xl font-bold mt-4">Mg Mg</h4>
+                  <p class="text-blue-200">CEO</p>
+                  <a href="portfolio.html?member=1" class="mt-4 px-4 py-2 bg-white text-blue-700 rounded-full hover:bg-blue-200 transition-all">
+                      View Portfolio
+                  </a>
+              </div>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="bg-gradient-to-r from-blue-500 to-blue-500 text-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+              <div class="flex flex-col items-center">
+                  <img src="assets/images/member2.jpg" alt="Ma Ma" class="w-40 h-40 rounded-full border-4 border-white shadow-md">
+                  <h4 class="text-xl font-bold mt-4">Ma Ma</h4>
+                  <p class="text-green-200">CTO</p>
+                  <a href="portfolio.html?member=2" class="mt-4 px-4 py-2 bg-white text-green-700 rounded-full hover:bg-green-200 transition-all">
+                      View Portfolio
+                  </a>
+              </div>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="bg-gradient-to-r from-blue-500 to-blue-500 text-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+              <div class="flex flex-col items-center">
+                  <img src="assets/images/member3.jpg" alt="Aung Aung" class="w-40 h-40 rounded-full border-4 border-white shadow-md">
+                  <h4 class="text-xl font-bold mt-4">Aung Aung</h4>
+                  <p class="text-purple-200">Marketing Manager</p>
+                  <a href="portfolio.html?member=3" class="mt-4 px-4 py-2 bg-white text-purple-700 rounded-full hover:bg-purple-200 transition-all">
+                      View Portfolio
+                  </a>
+              </div>
+          </div>
+          <!-- Team Member 4 -->
+          <div class="bg-gradient-to-r from-blue-500 to-blue-500 text-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+              <div class="flex flex-col items-center">
+                  <img src="assets/images/member4.jpg" alt="Hla Hla" class="w-40 h-40 rounded-full border-4 border-white shadow-md">
+                  <h4 class="text-xl font-bold mt-4">Hla Hla</h4>
+                  <p class="text-pink-200">Product Designer</p>
+                  <a href="portfolio.html?member=4" class="mt-4 px-4 py-2 bg-white text-pink-700 rounded-full hover:bg-pink-200 transition-all">
+                      View Portfolio
+                  </a>
+              </div>
+          </div>
+          <!-- Team Member 5 -->
+          <div class="bg-gradient-to-r from-blue-500 to-blue-500 text-white rounded-lg shadow-lg p-6 transform hover:scale-105 transition-all duration-300">
+              <div class="flex flex-col items-center">
+                  <img src="assets/images/member5.jpg" alt="Kyaw Kyaw" class="w-40 h-40 rounded-full border-4 border-white shadow-md">
+                  <h4 class="text-xl font-bold mt-4">Kyaw Kyaw</h4>
+                  <p class="text-yellow-200">HR Specialist</p>
+                  <a href="portfolio.html?member=5" class="mt-4 px-4 py-2 bg-white text-yellow-700 rounded-full hover:bg-yellow-200 transition-all">
+                      View Portfolio
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-500 text-white py-6 text-center">
+    <p>&copy; 2025 Unique Goal. All rights reserved.</p>
+</footer>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+
+<script>
+    gsap.from("h3.text-3xl", { opacity: 0, y: -50, duration: 1 });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    gsap.from(".animate-fadeInUp", {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+        onComplete: () => console.log("Animation completed"),
+    });
+});
+
+</script>
+
+</body>
+</html>
